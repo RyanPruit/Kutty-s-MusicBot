@@ -49,13 +49,13 @@ def main():
     
     criteria = ['feelings of self', 'glass half full', 'stages of depression', 'tempo', 'seriousness', 'future prospects', 'feeling of male', 'togetherness']
 
-    st.set_page_config(page_title="Taylor's Tune", page_icon="🎵")
-    st.title("Taylor's Tune")
+    st.set_page_config(page_title="Kutty's Tune", page_icon="🎵")
+    st.title("Kutty's Tune")
 
     st.image("media/ts-wallpaper.webp")
-    st.subheader("Find the best Taylor Swift song based on your mood", divider="rainbow", anchor=False)
+    st.subheader("Find the best Kutty's album song based on your mood", divider="rainbow", anchor=False)
 
-    st.markdown("*Try to explain how do you feel and your relationship status using the chat and the agent will help you finding the most suited Taylor Swift songs for you!*")
+    st.markdown("*Try to explain how do you feel and your relationship status using the chat and the agent will help you finding the most suited Kutty's Album songs for you!*")
     # Initialize chat history and selected model
     if "messages" not in st.session_state:
         st.session_state.messages = []
@@ -358,10 +358,10 @@ The criteria list is: [3, 3, 0, 0, 0, 3, 0, 0]
                     [
                         SystemMessage(
                             content = (f"""
-You are an AI assistant that has two goals: detecting the user mood and suggest a Taylor Swift song compatible with the user mood.
+You are an AI assistant that has two goals: detecting the user mood and suggest a Kutty's song compatible with the user mood.
 First of all you have to highlight a maximum of 5 keywords from the user input.
 Then you have to tell to the user which is the most relevant feeling the user is having.
-Finally, based on the user mood you have to suggest a Taylor Swift song that is compatible with the user mood. 
+Finally, based on the user mood you have to suggest a Kutty's song that is compatible with the user mood. 
 Use the following context to help in your suggestion:
 - Songs retrieved by user emotion analysis: {song_from_scores_db}\n
 - Songs retrieved according to lyrics matching: {song_from_song_db}\n
